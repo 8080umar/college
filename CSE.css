@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+.hero {
+    background: url('https://source.unsplash.com/1600x800/?college,campus') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.btn {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e65100;
+}
+
+
+.about {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about img {
+    width: 800%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(226, 85, 85, 0.1);
+}
+
+
+.courses {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.course-cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    div {
+  box-shadow: inset 5px 5px 10px rgba(233, 138, 138, 0.5);
+}
+
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(240, 74, 74, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    div {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 30px 10px;
+    font-size: 1.3em;
+}
+
+.card p {
+    padding: 0 15px 15px 15px 15px;
+}
+
+
+.contact {
+    background-color: #fff;
+    text-align: center;
+    padding: 40x 0;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+video{
+    flex: auto;
+   height: 450px;
+   width: 300px;
+   color-interpolation-filters: auto;
+}
